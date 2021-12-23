@@ -1,0 +1,54 @@
+{
+    "name": "rawelja/password-generator",
+    "description": "Demo package for GeekFit app",
+    "keywords": [
+        "rawelja",
+        "password-generator"
+    ],
+    "homepage": "https://github.com/rawelja/password-generator",
+    "license": "The Unlicense",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bojan Ravic",
+            "email": "ravicbojan@ymail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rawelja\\PasswordGenerator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rawelja\\PasswordGenerator\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rawelja\\PasswordGenerator\\ServiceProviders\\PasswordGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "PasswordGenerator": "Rawelja\\PasswordGenerator\\Facades\\PasswordGeneratorFacade"
+            }
+        }
+    }
+}
