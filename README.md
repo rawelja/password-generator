@@ -1,49 +1,30 @@
-# Very short description of the package
+# 💻 Random password generator service
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rawelja/password-generator.svg?style=flat-square)](https://packagist.org/packages/rawelja/password-generator)
-[![Total Downloads](https://img.shields.io/packagist/dt/rawelja/password-generator.svg?style=flat-square)](https://packagist.org/packages/rawelja/password-generator)
-![GitHub Actions](https://github.com/rawelja/password-generator/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+### Installation
+`composer require rawelja/password-generator`
 
-## Installation
+🚀 Once done, use PasswordGenerator::type($type)->generate() in your code.
 
-You can install the package via composer:
 
-```bash
-composer require rawelja/password-generator
-```
+You can use 3 different password types:
+1. Weak and pass 1 to type()
+2. Medium and pass 2 to type()
+2. Strong and pass 3 to type()
 
-## Usage
 
-```php
-// Usage description here
-```
 
-### Testing
+## Tests
 
-```bash
-composer test
-```
+Tests are located under the `tests/` directory and are split into:
 
-### Changelog
+- Unit tests - Tests a single class or function
+- Feature tests - Tests a feature (one or more classes/functions together)
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+Tests are run using the [PHPUnit](https://phpunit.de/) library.
+[PCOV](https://github.com/krakjoe/pcov) is used for coverage report.
+(PCOV is used instead of Xdebug for speed).
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email ravicbojan@ymail.com instead of using the issue tracker.
-
-## Credits
-
--   [Bojan Ravic](https://github.com/rawelja)
--   [All Contributors](../../contributors)
-
-## License
-
-The The Unlicense. Please see [License File](LICENSE.md) for more information.
+`composer test` or
+`composer test-coverage`
 
