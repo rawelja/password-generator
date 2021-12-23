@@ -6,7 +6,7 @@
         "password-generator"
     ],
     "homepage": "https://github.com/rawelja/password-generator",
-    "license": "The Unlicense",
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
