@@ -47,7 +47,7 @@
                 "Rawelja\\PasswordGenerator\\ServiceProviders\\PasswordGeneratorServiceProvider"
             ],
             "aliases": {
-                "PasswordGenerator": "Rawelja\\PasswordGenerator\\Facades\\PasswordGeneratorFacade"
+                "PasswordGenerator": "Rawelja\\PasswordGenerator\\Facades\\PasswordGenerator"
             }
         }
     }
